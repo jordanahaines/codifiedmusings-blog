@@ -1,0 +1,60 @@
+backend:
+  name: gitlab
+  repo: jordanahaines/public-projects-and-wiki
+  auth_type: implicit
+  app_id: 2f553f76150e688270c5ba2ac9a2bd0df9c756d2ffcf927376d0b3083ab05e07
+media_folder: blog/static/assets
+# publish_mode: editorial_workflow
+public_folder: /assets
+collections:
+  - name: projects
+    label: projects
+    folder: blog/_data/projects
+    slug: 'project-{{slug}}'
+    create: true
+    fields:
+      - {
+        label: Template,
+        name: template,
+        widget: hidden,
+        default: Project
+       }
+      - { name: url, label: URL }
+      - { name: path, label: Path (Local) }
+      - { name: title, label: Title }
+      - label: Featured Image
+        name: thumbnail
+        widget: image
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - { name: description, label: Description, widget: text }
+  - name: blog
+    label: Codified Musings (Blog Posts)
+    folder: blog/_data/blog
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    create: true
+    fields:
+      - {
+          label: Template,
+          name: template,
+          widget: hidden,
+          default: BlogPost,
+        }
+      - { name: path, label: Path }
+      - { name: date, label: Date, widget: datetime }
+      - { name: title, label: Title }
+      - label: Featured Image
+        name: thumbnail
+        widget: image
+        hint: "Image size 1280x800 works best :)"
+        required: false
+        media_library:
+          config:
+            multiple: false
+      - { name: body, label: Body, widget: markdown }
+      - label: Meta Description
+        name: metaDescription
+        widget: text
+        required: false

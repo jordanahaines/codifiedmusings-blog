@@ -1,0 +1,46 @@
+{
+  "name": "codified-musings",
+  "description": "The personal blog of Jordan A Haines (based off of Delog",
+  "author": "W3Layouts Team <support@w3layouts.com>",
+  "version": "0.1.0",
+  "license": "MIT",
+  "dependencies": {
+    "gatsby": "^4.6.2",
+    "gatsby-cli": "^2.12.34",
+    "gatsby-plugin-dark-mode": "^1.1.1",
+    "gatsby-plugin-google-analytics": "^2.1.36",
+    "gatsby-plugin-netlify-cms": "^4.1.38",
+    "gatsby-plugin-react-helmet": "^3.1.22",
+    "gatsby-plugin-sass": "^2.1.28",
+    "gatsby-remark-emojis": "^0.4.2",
+    "gatsby-remark-prismjs": "^3.3.31",
+    "gatsby-source-filesystem": "^2.1.48",
+    "gatsby-transformer-remark": "^2.6.53",
+    "netlify-cms-app": "^2.12.11",
+    "node-sass": "^4.13.1",
+    "prismjs": "^1.19.0",
+    "react": "^16.12.0",
+    "react-dom": "^16.12.0",
+    "react-helmet": "^5.2.1"
+  },
+  "devDependencies": {
+    "prettier": "^1.19.1"
+  },
+  "homepage": "https://github.com/jordanahaines/codifiedmusings-blog",
+  "keywords": [
+    "gatsby",
+    "netlify cms"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jordanahaines/codifiedmusings-blog.git"
+  },
+  "scripts": {
+    "build": "gatsby build",
+    "develop": "gatsby develop",
+    "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
+    "start": "npm run develop",
+    "serve": "gatsby serve",
+    "clean": "gatsby clean"
+  }
+}

@@ -1,0 +1,22 @@
+.page-index {
+    .primary-content {
+        border-bottom: solid 12px darken(#2da7a1, 8%);
+    }
+    .primary-image {
+        flex: 0 0 220px;
+        margin-right: 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .primary-content-copy {
+        flex: 1 1 400px;
+        h1 {
+            margin-bottom: 10px;
+        }
+        p {
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+    }
+}

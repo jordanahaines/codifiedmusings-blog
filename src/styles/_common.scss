@@ -1,0 +1,12 @@
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.gatsby-highlight {
+    margin: 24px 0px !important;
+    .language-python {
+        background-color: #0b0b42;
+    }
+}
